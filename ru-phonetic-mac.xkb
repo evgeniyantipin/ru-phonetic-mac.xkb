@@ -1,12 +1,14 @@
 /**
- * NAME: Russian (phonetic Mac)
- * DESCRIPTION: Apple/Mac based Russian->Phonetic keyboard layout
- * FILE: ru-phonetic-mac.xkb
- * MADE BY: DYM <http://dym.sh>, 2017
- * LICENSE: MIT / CC0
- */
-
-/** keymap
+ * NAME:      Russian (phonetic Mac)
+ * SHORTHAND: phonetic_mac
+ * LAYOUT:    ru
+ * EXTENDS:   ru(phonetic), mac
+ * DESC:      Apple/Mac based Russian->Phonetic keyboard layout
+ * FILE:      ru-phonetic-mac.xkb
+ * MADE BY:   DYM <http://dym.sh>, 2017
+ * LICENSE:   MIT / CC0
+ * --         --
+ * KEYMAP:    ```
 ┌─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┬─────┲━━━━━━━┓
 │ Щ ~ │ ! ≈ │ @ ∞ │ # № │ $ € │ % ‰ │ ^ ≤ │ & ≥ │ * × │ (   │ )   │ Ь   │ Ъ   ┃     ⌫ ┃
 │ щ ` │ 1 ¡ │ 2 ¤ │ 3 § │ 4   │ 5 ° │ 6 < │ 7 > │ 8 • │ 9   │ 0   │ ь   │ ъ   ┃  back ┃
@@ -23,7 +25,8 @@
 ┃ ⌃      ┃ ⌥     ┃ ⌘      ┃                                   ┃      ⌘ ┃     ⌥ ┃    ⌃ ┃
 ┃ ctrl   ┃ alt   ┃ cmd    ┃               space               ┃    cmd ┃   alt ┃ ctrl ┃
 ┗━━━━━━━━┻━━━━━━━┻━━━━━━━━┹───────────────────────────────────┺━━━━━━━━┻━━━━━━━┻━━━━━━┛
-*/
+ ```
+ */
 
 partial alphanumeric_keys
 xkb_symbols "phonetic_mac"
