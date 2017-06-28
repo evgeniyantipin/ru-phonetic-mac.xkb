@@ -28,205 +28,300 @@
 partial alphanumeric_keys
 xkb_symbols "phonetic_mac"
   {
-    // layout name
     name[Group1]= "Russian (phonetic Mac)"
 
-    ; key <TLDE>
-       {[ Cyrillic_shcha
-        , Cyrillic_SHCHA
+    ; key <TLDE>         // ~
+       {[ Cyrillic_shcha // щ
+        , Cyrillic_SHCHA // Щ
+        ,                // `
+        , tilde          // ~
         ]}
-    ; key <AE01>
-       {[ 1
-        , exclam
+    ; key <AE01> // 1
+       {[ 1              // 1
+        , exclam         // !
+        ,                // ¡
+        ,                // ≈
         ]}
-    ; key <AE02>
-       {[ 2
-        , at
+    ; key <AE02> // 2
+       {[ 2              // 2
+        , at             // @
+        ,                // _
+        ,                // _
         ]}
-    ; key <AE03>
-       {[ 3
-        , numbersign
+    ; key <AE03> // 3
+       {[ 3              // 3
+        , numbersign     // #
+        ,                // _
+        ,                // _
         ]}
-    ; key <AE04>
+    ; key <AE04> // 4
        {[ 4
-        , dollar
+        , dollar         // $
+        ,                // _
+        ,                // _
         ]}
-    ; key <AE05>
-       {[ 5
-        , percent
+    ; key <AE05> // 5
+       {[ 5              // 5
+        , percent        // %
+        ,                // _
+        ,                // _
         ]}
     ; key <AE06>
        {[ 6
         , asciicircum
+        ,                // _
+        ,                // _
         ]}
     ; key <AE07>
        {[ 7
         , ampersand
+        ,                // _
+        ,                // _
         ]}
     ; key <AE08>
        {[ 8
         , asterisk
+        ,                // _
+        ,                // _
         ]}
     ; key <AE09>
        {[ 9
         , parenleft
+        ,                // _
+        ,                // _
         ]}
     ; key <AE10>
        {[ 0
         , parenright
+        ,                // _
+        ,                // _
         ]}
     ; key <AE11> // -
        {[ Cyrillic_softsign
         , Cyrillic_SOFTSIGN
+        ,                // _
+        ,                // _
         ]}
     ; key <AE12> // =
        {[ Cyrillic_hardsign
         , Cyrillic_HARDSIGN
+        ,                // _
+        ,                // _
         ]}
 
     ; key <AD01> // Q
        {[ Cyrillic_ya
         , Cyrillic_YA
+        ,                // _
+        ,                // _
         ]}
     ; key <AD02> // W
        {[ Cyrillic_sha
         , Cyrillic_SHA
+        ,                // _
+        ,                // _
         ]}
     ; key <AD03> // E
        {[ Cyrillic_ie
         , Cyrillic_IE
+        ,                // _
+        ,                // _
         ]}
     ; key <AD04> // R
        {[ Cyrillic_er
         , Cyrillic_ER
+        ,                // _
+        ,                // _
         ]}
     ; key <AD05> // T
        {[ Cyrillic_te
         , Cyrillic_TE
+        ,                // _
+        ,                // _
         ]}
     ; key <AD06> // Y
        {[ Cyrillic_yeru
         , Cyrillic_YERU
+        ,                // _
+        ,                // _
         ]}
     ; key <AD07> // U
        {[ Cyrillic_u
         , Cyrillic_U
+        ,                // _
+        ,                // _
         ]}
     ; key <AD08> // I
        {[ Cyrillic_i
         , Cyrillic_I
+        ,                // _
+        ,                // _
         ]}
     ; key <AD09> // O
        {[ Cyrillic_o
         , Cyrillic_O
+        ,                // _
+        ,                // _
         ]}
     ; key <AD10> // P
        {[ Cyrillic_pe
         , Cyrillic_PE
+        ,                // _
+        ,                // _
         ]}
     ; key <AD11> // [
        {[ Cyrillic_yu
         , Cyrillic_YU
+        ,                // _
+        ,                // _
         ]}
     ; key <AD12> // ]
        {[ Cyrillic_zhe
         , Cyrillic_ZHE
+        ,                // _
+        ,                // _
         ]}
     ; key <BKSL> // \
        {[ Cyrillic_e
         , Cyrillic_E
+        ,                // _
+        ,                // _
         ]}
 
     ; key <AC01> // A
        {[ Cyrillic_a
         , Cyrillic_A
+        ,                // _
+        ,                // _
         ]}
     ; key <AC02> // S
        {[ Cyrillic_es
         , Cyrillic_ES
+        ,                // _
+        ,                // _
         ]}
     ; key <AC03> // D
        {[ Cyrillic_de
         , Cyrillic_DE
+        ,                // _
+        ,                // _
         ]}
     ; key <AC04> // F
        {[ Cyrillic_ef
         , Cyrillic_EF
+        ,                // _
+        ,                // _
         ]}
     ; key <AC05> // G
        {[ Cyrillic_ghe
         , Cyrillic_GHE
+        ,                // _
+        ,                // _
         ]}
     ; key <AC06> // H
        {[ Cyrillic_che
         , Cyrillic_CHE
+        ,                // _
+        ,                // _
         ]}
     ; key <AC07> // J
        {[ Cyrillic_shorti
         , Cyrillic_SHORTI
+        ,                // _
+        ,                // _
         ]}
     ; key <AC08> // K
        {[ Cyrillic_ka
         , Cyrillic_KA
+        ,                // _
+        ,                // _
         ]}
     ; key <AC09> // L
        {[ Cyrillic_el
         , Cyrillic_EL
+        ,                // _
+        ,                // _
         ]}
     ; key <AC10> // ;
        {[ semicolon
         , colon
+        ,                // _
+        ,                // _
         ]}
     ; key <AC11> // '
        {[ apostrophe
         , quotedbl
+        ,                // _
+        ,                // _
         ]}
 
     ; key <AB01> // Z
        {[ Cyrillic_ze
         , Cyrillic_ZE
+        ,                // _
+        ,                // _
         ]}
     ; key <AB02> // X
        {[ Cyrillic_ha
         , Cyrillic_HA
+        ,                // _
+        ,                // _
         ]}
     ; key <AB03> // C
        {[ Cyrillic_tse
         , Cyrillic_TSE
+        ,                // _
+        ,                // _
         ]}
     ; key <AB04> // V
        {[ Cyrillic_ve
         , Cyrillic_VE
+        ,                // _
+        ,                // _
         ]}
     ; key <AB05> // B
        {[ Cyrillic_be
         , Cyrillic_BE
+        ,                // _
+        ,                // _
         ]}
     ; key <AB06> // N
        {[ Cyrillic_en
         , Cyrillic_EN
+        ,                // _
+        ,                // _
         ]}
     ; key <AB07> // M
        {[ Cyrillic_em
         , Cyrillic_EM
+        ,                // _
+        ,                // _
         ]}
     ; key <AB08> // ,
        {[ comma
         , less
+        ,                // _
+        ,                // _
         ]}
     ; key <AB09> // .
        {[ period
         , greater
+        ,                // _
+        ,                // _
         ]}
     ; key <AB10> // /
        {[ slash
         , question
+        ,                // _
+        ,                // _
         ]}
 
     // rest
     ; key <LSGT>
        {[ bar
         , brokenbar
+        ,                // _
+        ,                // _
         ]}
     ;
   }
