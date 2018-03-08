@@ -1,0 +1,46 @@
+
+njorak wayland xkb
+
+Fedora 25 includes wayland as the default display backend and this time around it actually looks to be a decent replacement. However my xmodmap config that I have carried around for years at this point was not going to work anymore.
+
+xmodmap even being deprecated for xorg is not likely to be ported to wayland so the option remaining is to dig into the madness that is xkb.
+
+Stuff I had to do to make it work
+Add a new variant
+
+add definition in /usr/share/X11/xkb/symbols/se
+
+partial alphanumeric_keys
+xkb_symbols "njorak" {
+    include "us(dvorak)"
+    name[Group1]= "Swedish (Njorak, level3 dead keys)";
+
+    key <AD01> { [apostrophe, quotedbl, dead_acute, dead_diaeresis ] };
+    key <TLDE> { [grave, asciitilde, dead_grave, dead_tilde ] };
+
+    key <AC06> { [d, D, aring, Aring] };
+    key <AC07> { [h, H, adiaeresis, Adiaeresis]     };
+    key <AC08> { [t, T, odiaeresis, Odiaeresis]     };
+};
+
+and register it in /usr/share/X11/xkb/rules/evdev.xml
+
+<variant>
+  <configItem>
+    <name>njorak</name>
+    <description>Swedish (Njorak, level3 dead keys)</description>
+  </configItem>
+</variant>
+
+Configure gnome to use it
+
+The relevant keys in gsettings are
+
+/org/gnome/desktop/input-sources/sources
+    list should include 'se+njorak'
+/org/gnome/desktop/input-sources/xkb-options
+    option to configure lv3 switch e.g "lv3:lalt_switch"
+
+Published by
+David Keijser <keijser@gmail.com>
+On 2016-11-29 17:59:21 
